@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniSwap - Trang chủ</title>
+
+    <style>
+        body {
+            background: #F5F5F5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .app {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 70px;
+            box-sizing: border-box;
+        }
+
+        /* Search bar */
+        .search-box {
+            padding: 18px 20px;
+            border-bottom: 1px solid #DDD;
+            background: white;
+            position: sticky;
+            top: 0;
+        }
+
+        .search-box input {
+            width: 92%;
+            padding: 12px 14px;
+            font-size: 15px;
+            border-radius: 8px;
+            border: 1.5px solid #BBB;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #2E7D32;
+        }
+
+        /* Product list */
+        .products {
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .card {
+            display: flex;
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 14px;
+            border: 1.5px solid #E0E0E0;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            background: #E8F3EA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            color: #2E7D32;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .price {
+            font-size: 15px;
+            color: #2E7D32;
+            margin-bottom: 3px;
+        }
+
+        .rating {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .btn-buy {
+            padding: 8px 14px;
+            background: #2E7D32;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn-buy:hover {
+            background: #265F27;
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            width: 100%;
+            height: 60px;
+            background: white;
+            border-top: 1px solid #DDD;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 430px;
+        }
+
+        .nav-item {
+            text-align: center;
+            font-size: 13px;
+            color: #444;
+            cursor: pointer;
+        }
+
+        .nav-item .icon {
+            font-size: 20px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .nav-item.active {
+            color: #2E7D32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Search -->
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        </div>
+
+        <!-- Product List -->
+        <div class="products">
+
+            <div class="card">
+                <div class="icon-box">📦</div>
+                <div class="card-content">
+                    <div class="name">Sách Giáo Trình Toán Cao Cấp</div>
+                    <div class="price">30.000đ</div>
+                    <div class="rating">⭐ 4.8 (23 đánh giá)</div>
+                    <button class="btn-buy">Mua ngay</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon-box">🎧</div>
+                <div class="card-content">
+                    <div class="name">Tai nghe Sony cũ</div>
+                    <div class="price">120.000đ</div>
+                    <div class="rating">⭐ 4.4 (10 đánh giá)</div>
+                    <button class="btn-buy">Mua ngay</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon-box">💻</div>
+                <div class="card-content">
+                    <div class="name">Laptop Dell sinh viên</div>
+                    <div class="price">3.800.000đ</div>
+                    <div class="rating">⭐ 4.7 (18 đánh giá)</div>
+                    <button class="btn-buy">Mua ngay</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+        <div class="nav-item"><span class="icon">💬</span>Chat</div>
+        <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+        <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+        <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+    </div>
+
+</body>
+
+</html>

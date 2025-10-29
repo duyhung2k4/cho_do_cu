@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng bài mới - UniSwap</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background: #F8FAF9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* TOP BAR */
+        .topbar {
+            width: 100%;
+            background: #2E7D32;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 18px;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        /* FORM */
+        .form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .form label {
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #333;
+        }
+
+        .form input,
+        .form select,
+        .form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cfcfcf;
+            border-radius: 10px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        /* UPLOAD BUTTON */
+        .upload-btn {
+            border: 1px dashed #2E7D32;
+            padding: 14px;
+            text-align: center;
+            border-radius: 10px;
+            background: #F0FFF0;
+            cursor: pointer;
+            color: #2E7D32;
+            font-weight: 500;
+        }
+
+        /* SUBMIT BUTTON */
+        .submit-btn {
+            width: 100%;
+            background: #2E7D32;
+            color: #fff;
+            padding: 14px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.25s;
+            border: none;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* BOTTOM NAV */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .nav-item.active {
+            color: #2E7D32;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="topbar">Đăng bài mới</div>
+
+        <form class="form">
+
+            <div>
+                <label>Tiêu đề sản phẩm</label>
+                <input type="text" placeholder="Nhập tiêu đề...">
+            </div>
+
+            <div>
+                <label>Mô tả</label>
+                <textarea placeholder="Mô tả chi tiết về sản phẩm..."></textarea>
+            </div>
+
+            <div>
+                <label>Giá (VNĐ)</label>
+                <input type="number" placeholder="VD: 150000">
+            </div>
+
+            <div>
+                <label>Danh mục</label>
+                <select>
+                    <option selected disabled>Chọn danh mục</option>
+                    <option>Đồ điện tử</option>
+                    <option>Sách & Giáo trình</option>
+                    <option>Đồ gia dụng</option>
+                    <option>Thời trang</option>
+                    <option>Khác</option>
+                </select>
+            </div>
+
+            <div class="upload-btn">+ Tải ảnh lên</div>
+
+            <button class="submit-btn">Đăng bài</button>
+
+        </form>
+
+        <!-- BOTTOM NAV -->
+        <div class="bottom-nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

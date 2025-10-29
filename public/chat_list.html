@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - UniSwap</title>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background: #F8FAF9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 70px;
+            /* space for bottom nav */
+        }
+
+        /* HEADER */
+        .header {
+            background: #2E7D32;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+
+        /* CHAT LIST */
+        .chat-list {
+            padding: 10px 0;
+        }
+
+        .chat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 20px;
+            border-bottom: 1px solid #E5E5E5;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .chat-item:hover {
+            background: #F2FFF2;
+        }
+
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #C8E6C9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            color: #2E7D32;
+            font-size: 18px;
+        }
+
+        .chat-info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .chat-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .chat-last {
+            font-size: 13px;
+            color: #666;
+            margin-top: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 240px;
+        }
+
+        .chat-time {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* BOTTOM NAV */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .nav-item.active {
+            color: #2E7D32;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">Tin nhắn</div>
+
+        <!-- CHAT LIST -->
+        <div class="chat-list">
+
+            <div class="chat-item">
+                <div class="avatar">A</div>
+                <div class="chat-info">
+                    <div class="chat-name">An Nguyễn</div>
+                    <div class="chat-last">Bạn ơi sản phẩm còn không?</div>
+                </div>
+                <div class="chat-time">10:21</div>
+            </div>
+
+            <div class="chat-item">
+                <div class="avatar">H</div>
+                <div class="chat-info">
+                    <div class="chat-name">Hồng Minh</div>
+                    <div class="chat-last">Ok, mai mình gặp ở cổng trường</div>
+                </div>
+                <div class="chat-time">Hôm qua</div>
+            </div>
+
+            <div class="chat-item">
+                <div class="avatar">Q</div>
+                <div class="chat-info">
+                    <div class="chat-name">Quốc Bảo</div>
+                    <div class="chat-last">Cho xin giá cuối ạ 🙏</div>
+                </div>
+                <div class="chat-time">Thứ 2</div>
+            </div>
+
+            <div class="chat-item">
+                <div class="avatar">T</div>
+                <div class="chat-info">
+                    <div class="chat-name">Trà My</div>
+                    <div class="chat-last">Mình đã chuyển khoản rồi nha</div>
+                </div>
+                <div class="chat-time">1 tuần</div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <div class="bottom-nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

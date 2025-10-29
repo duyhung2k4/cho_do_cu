@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Màn hình Đăng nhập - UniSwap</title>
+
+    <style>
+        body {
+            background: #F5F5F5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            background: #2E7D32;
+            border-radius: 50%;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 18px;
+        }
+
+        .input-group label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            border: 1px solid #CCCCCC;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #2E7D32;
+        }
+
+        .btn-login {
+            width: 100%;
+            background: #2E7D32;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-login:hover {
+            background: #265F27;
+        }
+
+        .forgot {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #2E7D32;
+            text-decoration: none;
+        }
+
+        .register-btn {
+            width: 100%;
+            margin-top: 24px;
+            background: transparent;
+            border: 2px solid #2E7D32;
+            color: #2E7D32;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .register-btn:hover {
+            background: #E8F3EA;
+        }
+
+        /* Bottom navigation ẩn */
+        .bottom-nav {
+            width: 100%;
+            height: 60px;
+            background: #FFFFFF;
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">U</div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Nhập email của bạn">
+        </div>
+
+        <div class="input-group">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="Nhập mật khẩu">
+        </div>
+
+        <button class="btn-login">Đăng nhập</button>
+
+        <a href="#" class="forgot">Quên mật khẩu?</a>
+
+        <button class="register-btn">Đăng ký</button>
+
+        <div class="bottom-nav"></div>
+    </div>
+
+</body>
+
+</html>

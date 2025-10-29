@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký tài khoản - UniSwap</title>
+
+    <style>
+        body {
+            background: #F5F5F5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            color: #2E7D32;
+            font-size: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+            width: 100%;
+        }
+
+        .input-group label {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            border: 1px solid #CCCCCC;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #2E7D32;
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .checkbox-row input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .checkbox-row a {
+            color: #2E7D32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-create {
+            width: 100%;
+            background: #2E7D32;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-create:hover {
+            background: #265F27;
+        }
+
+        .bottom-nav {
+            width: 100%;
+            height: 60px;
+            background: #FFFFFF;
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Tạo tài khoản</h2>
+
+        <div class="input-group">
+            <label>Họ và tên</label>
+            <input type="text" placeholder="Nhập họ tên đầy đủ">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Nhập email">
+        </div>
+
+        <div class="input-group">
+            <label>Mật khẩu</label>
+            <input type="password" placeholder="Nhập mật khẩu">
+        </div>
+
+        <div class="input-group">
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" placeholder="Nhập lại mật khẩu">
+        </div>
+
+        <div class="checkbox-row">
+            <input type="checkbox">
+            <span>Tôi đồng ý với <a href="#">Điều khoản dịch vụ</a></span>
+        </div>
+
+        <button class="btn-create">Tạo tài khoản</button>
+
+        <div class="bottom-nav"></div>
+    </div>
+
+</body>
+
+</html>

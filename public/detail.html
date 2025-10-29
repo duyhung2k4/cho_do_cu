@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm - UniSwap</title>
+
+    <style>
+        body {
+            background: #F5F5F5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .app {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            box-sizing: border-box;
+            padding-bottom: 80px;
+            position: relative;
+        }
+
+        /* Product Image */
+        .image-box {
+            width: 100%;
+            height: 260px;
+            background: #E8F3EA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 90px;
+            color: #2E7D32;
+        }
+
+        /* Title + Price */
+        .info {
+            padding: 18px 22px;
+            border-bottom: 1px solid #DDD;
+        }
+
+        .name-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .fav {
+            font-size: 26px;
+            cursor: pointer;
+            color: #2E7D32;
+        }
+
+        .price {
+            margin-top: 6px;
+            font-size: 20px;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+
+        /* Description */
+        .desc {
+            padding: 18px 22px;
+            border-bottom: 1px solid #DDD;
+            line-height: 1.45;
+            font-size: 15px;
+            color: #444;
+        }
+
+        /* Seller info */
+        .seller {
+            padding: 18px 22px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #DDD;
+        }
+
+        .avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #E8F3EA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #2E7D32;
+        }
+
+        .seller-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Buttons */
+        .actions {
+            display: flex;
+            gap: 10px;
+            padding: 18px 22px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 14px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-chat {
+            background: #E8F3EA;
+            color: #2E7D32;
+            border: 1.4px solid #2E7D32;
+        }
+
+        .btn-chat:hover {
+            background: #DCEFE0;
+        }
+
+        .btn-buy {
+            background: #2E7D32;
+            color: white;
+        }
+
+        .btn-buy:hover {
+            background: #265F27;
+        }
+
+        /* Rating */
+        .rating {
+            padding: 16px 22px 35px;
+            color: #555;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Image -->
+        <div class="image-box">
+            📦
+        </div>
+
+        <!-- Name + Price -->
+        <div class="info">
+            <div class="name-row">
+                <div class="name">Laptop Dell sinh viên</div>
+                <div class="fav">❤️</div>
+            </div>
+            <div class="price">3.800.000đ</div>
+        </div>
+
+        <!-- Description -->
+        <div class="desc">
+            Laptop phù hợp cho sinh viên văn phòng, học online, lướt web.
+            Tình trạng còn 90%, pin tốt. Bao test.
+        </div>
+
+        <!-- Seller info -->
+        <div class="seller">
+            <div class="avatar">👤</div>
+            <div>
+                <div class="seller-name">Nguyễn Văn Minh</div>
+                <div style="font-size: 14px; color:#666;">Khoa CNTT - K18</div>
+            </div>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="actions">
+            <button class="btn btn-chat">Nhắn tin</button>
+            <button class="btn btn-buy">Mua ngay</button>
+        </div>
+
+        <!-- Rating -->
+        <div class="rating">
+            ⭐⭐⭐⭐☆ (4.5) - 23 đánh giá
+        </div>
+
+    </div>
+
+</body>
+
+</html>

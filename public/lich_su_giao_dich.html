@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử giao dịch - UniSwap</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #F8FAF9;
+            display: flex;
+            justify-content: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 70px;
+        }
+
+        /* HEADER */
+        .header {
+            background: #2E7D32;
+            color: #fff;
+            text-align: center;
+            padding: 16px;
+            font-weight: 600;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+        }
+
+        /* TRANSACTION LIST */
+        .transaction-list {
+            padding: 12px 0;
+        }
+
+        .transaction-item {
+            padding: 14px 20px;
+            border-bottom: 1px solid #EEE;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .title-price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .price {
+            font-size: 15px;
+            color: #2E7D32;
+            font-weight: 600;
+        }
+
+        .status-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            font-size: 13px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .dang-giao {
+            background: #FFF4D7;
+            color: #D08800;
+        }
+
+        .da-nhan {
+            background: #E7F7E9;
+            color: #2E7D32;
+        }
+
+        .review-btn {
+            padding: 6px 14px;
+            background: #2E7D32;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* BOTTOM NAV */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0;
+        }
+
+        .nav-item {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            cursor: pointer;
+        }
+
+        .nav-item.active {
+            color: #2E7D32;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">Lịch sử giao dịch</div>
+
+        <div class="transaction-list">
+
+            <div class="transaction-item">
+                <div class="title-price-row">
+                    <div class="product-name">Laptop Dell Inspiron</div>
+                    <div class="price">4.500.000₫</div>
+                </div>
+                <div class="status-row">
+                    <div class="status dang-giao">Đang giao</div>
+                    <button class="review-btn">Đánh giá</button>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="title-price-row">
+                    <div class="product-name">Giáo trình Giải tích 1</div>
+                    <div class="price">80.000₫</div>
+                </div>
+                <div class="status-row">
+                    <div class="status da-nhan">Đã nhận</div>
+                    <button class="review-btn">Đánh giá</button>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="title-price-row">
+                    <div class="product-name">Chuột Logitech M331</div>
+                    <div class="price">120.000₫</div>
+                </div>
+                <div class="status-row">
+                    <div class="status da-nhan">Đã nhận</div>
+                    <button class="review-btn">Đánh giá</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <div class="bottom-nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
