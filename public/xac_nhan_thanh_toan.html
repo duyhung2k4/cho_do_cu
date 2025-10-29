@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Xác nhận giao dịch an toàn</title>
+
+    <style>
+        :root {
+            --green: #2E7D32;
+            --green-dark: #1B5E20;
+            --gray: #666;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, Arial, sans-serif;
+            background: #F5F7F5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 430px;
+            background: #fff;
+            padding: 28px;
+            min-height: 100vh;
+        }
+
+        /* Shield Icon */
+        .shield {
+            font-size: 60px;
+            color: var(--green);
+            text-align: center;
+            margin-top: 20px;
+            animation: pulse 1.8s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.9;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.9;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 12px;
+            color: var(--green);
+        }
+
+        p.desc {
+            text-align: center;
+            color: var(--gray);
+            font-size: 14px;
+            margin-top: 6px;
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+
+        /* Card sections */
+        .card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 16px 18px;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+        }
+
+        .label {
+            font-size: 13px;
+            color: var(--gray);
+            margin-bottom: 4px;
+        }
+
+        .value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .seller {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        /* Confirm Button */
+        .confirm-btn {
+            width: 100%;
+            background: var(--green);
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.25);
+            transition: transform .15s, background .22s, box-shadow .22s;
+        }
+
+        .confirm-btn:hover {
+            background: var(--green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(46, 125, 50, 0.35);
+        }
+
+        .confirm-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="shield">🛡️</div>
+
+        <h1>Xác nhận giao dịch an toàn</h1>
+        <p class="desc">Chúng tôi sẽ giữ tiền cho đến khi bạn xác nhận rằng hàng hóa được nhận đúng mô tả.</p>
+
+        <!-- Product Info -->
+        <div class="card">
+            <div class="label">Sản phẩm</div>
+            <div class="value">Laptop Lenovo ThinkPad T480</div>
+
+            <div class="label" style="margin-top:16px;">Giá</div>
+            <div class="value">4.500.000đ</div>
+        </div>
+
+        <!-- Seller Info -->
+        <div class="card">
+            <div class="label">Người bán</div>
+            <div class="seller">
+                <div class="avatar">👤</div>
+                <div class="value">Nguyễn Minh Khoa</div>
+            </div>
+        </div>
+
+        <!-- Confirm Button -->
+        <button class="confirm-btn">Xác nhận thanh toán an toàn</button>
+
+    </div>
+
+</body>
+
+</html>

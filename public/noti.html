@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông báo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #fff;
+            padding-bottom: 60px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #2E7D32;
+            color: white;
+        }
+
+        /* Notification List */
+        .notifications {
+            padding: 14px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .icon {
+            font-size: 22px;
+            color: #2E7D32;
+            margin-right: 12px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .title {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .time {
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Bottom Nav (ẩn hoặc placeholder) */
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .nav div {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">Thông báo</div>
+
+        <!-- Notification List -->
+        <div class="notifications">
+
+            <div class="item">
+                <div class="icon">&#128276;</div>
+                <div class="text">
+                    <div class="title">Người mua đã nhắn tin</div>
+                    <div class="time">5 phút trước</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">&#128276;</div>
+                <div class="text">
+                    <div class="title">Sản phẩm của bạn được yêu thích</div>
+                    <div class="time">1 giờ trước</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="icon">&#128276;</div>
+                <div class="text">
+                    <div class="title">Giao dịch đã hoàn tất</div>
+                    <div class="time">Hôm qua</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

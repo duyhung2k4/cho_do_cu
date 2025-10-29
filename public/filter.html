@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Lọc Tìm Kiếm</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #F8F8F8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 24px;
+            color: #2E7D32;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+            margin-bottom: 18px;
+        }
+
+        .card h2 {
+            font-size: 15px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        /* Checkbox list */
+        .options label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .options input {
+            margin-right: 8px;
+        }
+
+        /* Range sliders */
+        input[type="range"] {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        .range-value {
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6px;
+            color: #555;
+        }
+
+        /* Apply button */
+        .apply-btn {
+            width: 100%;
+            background: #2E7D32;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 18px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 10px;
+        }
+
+        .apply-btn:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bộ lọc sản phẩm</h1>
+
+        <!-- Danh mục -->
+        <div class="card">
+            <h2>Danh mục</h2>
+            <div class="options">
+                <label><input type="checkbox"> Laptop</label>
+                <label><input type="checkbox"> Điện thoại</label>
+                <label><input type="checkbox"> Sách học</label>
+                <label><input type="checkbox"> Xe đạp</label>
+                <label><input type="checkbox"> Đồ điện tử</label>
+            </div>
+        </div>
+
+        <!-- Khoảng giá -->
+        <div class="card">
+            <h2>Khoảng giá</h2>
+            <input type="range" min="0" max="5000000" value="1000000">
+            <div class="range-value">
+                <span>0đ</span>
+                <span>5.000.000đ</span>
+            </div>
+        </div>
+
+        <!-- Khoảng cách -->
+        <div class="card">
+            <h2>Khoảng cách</h2>
+            <input type="range" min="1" max="20" value="5">
+            <div class="range-value">
+                <span>Gần</span>
+                <span>Xa</span>
+            </div>
+        </div>
+
+        <!-- Apply -->
+        <button class="apply-btn">Áp dụng</button>
+
+    </div>
+
+</body>
+
+</html>

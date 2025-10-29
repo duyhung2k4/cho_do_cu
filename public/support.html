@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hỗ trợ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #fff;
+        }
+
+        /* Header */
+        .header {
+            background: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* FAQ Section */
+        .faq-header {
+            display: flex;
+            align-items: center;
+            padding: 18px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #2E7D32;
+        }
+
+        .faq-header .icon {
+            font-size: 22px;
+            margin-right: 8px;
+        }
+
+        .faq-list {
+            padding: 0 16px;
+        }
+
+        .faq-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #eee;
+            color: #333;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .faq-item:hover {
+            color: #2E7D32;
+        }
+
+        /* Contact Button */
+        .support-btn {
+            margin: 28px auto;
+            display: block;
+            width: 85%;
+            background: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .support-btn:hover {
+            background: #1B5E20;
+        }
+
+        /* Bottom Navigation */
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .nav div {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">Hỗ trợ</div>
+
+        <!-- FAQ Section -->
+        <div class="faq-header">
+            <span class="icon">🎧</span> Câu hỏi thường gặp (FAQ)
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">Làm sao để đăng bán sản phẩm?</div>
+            <div class="faq-item">Cách liên hệ với người bán?</div>
+            <div class="faq-item">Chính sách bảo mật dữ liệu</div>
+            <div class="faq-item">Tôi muốn báo cáo người dùng</div>
+        </div>
+
+        <!-- Contact Button -->
+        <button class="support-btn">Liên hệ hỗ trợ</button>
+
+        <!-- Bottom Navigation -->
+        <div class="nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

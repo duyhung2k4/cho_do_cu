@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cài đặt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 430px;
+            min-height: 100vh;
+            background: #fff;
+        }
+
+        /* Header */
+        .header {
+            background: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid #1B5E20;
+        }
+
+        /* List */
+        .settings-list {
+            padding: 10px 0;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 14px 18px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .item:hover {
+            background: #F1F8E9;
+        }
+
+        .icon {
+            font-size: 22px;
+            color: #2E7D32;
+            margin-right: 14px;
+            width: 28px;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 15px;
+            color: #333;
+            flex: 1;
+        }
+
+        .arrow {
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        /* Bottom Navigation */
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 430px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        .nav div {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">Cài đặt</div>
+
+        <!-- Settings List -->
+        <div class="settings-list">
+
+            <div class="item">
+                <div class="icon">🌐</div>
+                <div class="text">Ngôn ngữ</div>
+                <div class="arrow">›</div>
+            </div>
+
+            <div class="item">
+                <div class="icon">🔔</div>
+                <div class="text">Thông báo</div>
+                <div class="arrow">›</div>
+            </div>
+
+            <div class="item">
+                <div class="icon">🔒</div>
+                <div class="text">Quyền riêng tư</div>
+                <div class="arrow">›</div>
+            </div>
+
+            <div class="item">
+                <div class="icon">🗝️</div>
+                <div class="text">Đổi mật khẩu</div>
+                <div class="arrow">›</div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="nav">
+            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
+            <div class="nav-item"><span class="icon">💬</span>Chat</div>
+            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
+            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
+            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
