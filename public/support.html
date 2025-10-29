@@ -2,8 +2,8 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hỗ trợ</title>
     <style>
         body {
@@ -15,9 +15,15 @@
         }
 
         .container {
-            width: 430px;
+            width: 100%;
+            max-width: 430px;
             min-height: 100vh;
             background: #fff;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 70px;
+            /* tránh đè nav */
         }
 
         /* Header */
@@ -47,6 +53,7 @@
 
         .faq-list {
             padding: 0 16px;
+            flex: 1;
         }
 
         .faq-item {
@@ -86,7 +93,10 @@
         .nav {
             position: fixed;
             bottom: 0;
-            width: 430px;
+            left: 0;
+            right: 0;
+            max-width: 430px;
+            margin: auto;
             background: #fff;
             border-top: 1px solid #ddd;
             display: flex;
@@ -94,23 +104,35 @@
             padding: 10px 0;
         }
 
-        .nav div {
+        .nav-item {
             font-size: 12px;
             color: #666;
             text-align: center;
+            flex: 1;
+        }
+
+        .nav-item .icon {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+
+        .nav-item.active {
+            color: #2E7D32;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-
     <div class="container">
         <!-- Header -->
         <div class="header">Hỗ trợ</div>
 
         <!-- FAQ Section -->
         <div class="faq-header">
-            <span class="icon">🎧</span> Câu hỏi thường gặp (FAQ)
+            <span class="icon">&#x1F3A7;</span> <!-- 🎧 -->
+            Câu hỏi thường gặp (FAQ)
         </div>
 
         <div class="faq-list">
@@ -122,17 +144,31 @@
 
         <!-- Contact Button -->
         <button class="support-btn">Liên hệ hỗ trợ</button>
-
-        <!-- Bottom Navigation -->
-        <div class="nav">
-            <div class="nav-item active"><span class="icon">🏠</span>Home</div>
-            <div class="nav-item"><span class="icon">💬</span>Chat</div>
-            <div class="nav-item"><span class="icon">➕</span>Đăng bài</div>
-            <div class="nav-item"><span class="icon">🕒</span>Lịch sử</div>
-            <div class="nav-item"><span class="icon">👤</span>Hồ sơ</div>
-        </div>
     </div>
 
+    <!-- Bottom Navigation -->
+    <div class="nav">
+        <div class="nav-item active">
+            <span class="icon">&#x1F3E0;</span> <!-- 🏠 -->
+            Home
+        </div>
+        <div class="nav-item">
+            <span class="icon">&#x1F4AC;</span> <!-- 💬 -->
+            Chat
+        </div>
+        <div class="nav-item">
+            <span class="icon">&#x2795;</span> <!-- ➕ -->
+            Đăng bài
+        </div>
+        <div class="nav-item">
+            <span class="icon">&#x1F552;</span> <!-- 🕒 -->
+            Lịch sử
+        </div>
+        <div class="nav-item">
+            <span class="icon">&#x1F464;</span> <!-- 👤 -->
+            Hồ sơ
+        </div>
+    </div>
 </body>
 
 </html>

@@ -13,7 +13,7 @@ reset_password.html
 search.html
 setting.html
 sign_up.html
-support.html
+support.html x
 verify.html
 vote.html
 xac_nhan_thanh_toan.html
